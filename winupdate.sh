@@ -6,7 +6,7 @@ if [ -e /usr/bin/pacman ]; then
 fi
 if [ -e /usr/bin/apt ]; then
     apt update
-    apt upgrade
+    apt -y upgrade
 fi
 wall -n "Your PC will reboot in 30 seconds."
 sleep 30

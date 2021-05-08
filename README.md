@@ -16,7 +16,7 @@ Each commit message must include one of the following emoji combinations:
 * 👉👈
 * 😱
 
-It is also forbidden to write commit messages that make sense. Examples:
+It is also forbidden to write commit messages that make sense:
 
 * "Changed title in README"
 * "removed redundant lines in script"
