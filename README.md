@@ -10,8 +10,20 @@ Want to use Linux and keep the stability of Windows? Then this is perfect for yo
 
 ## Contributing
 
-Each commit must include one of the following emoji combinations:
+Each commit message must include one of the following emoji combinations:
 
 * 👁️👄👁️
 * 👉👈
 * 😱
+
+It is also forbidden to write commit messages that make sense. Examples:
+
+* "Changed title in README"
+* "removed redundant lines in script"
+* "fixed timer unit"
+
+Instead you should do this:
+
+* "👉👈 readme"
+* "😱 script is bloat"
+* "👁️👄👁️ fix timer"
