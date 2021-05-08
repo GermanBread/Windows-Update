@@ -1,0 +1,10 @@
+[Unit]
+Description=Windows Update for Arch Linux!
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+Unit=Windows_Update.service
+
+[Install]
+WantedBy=timers.target
