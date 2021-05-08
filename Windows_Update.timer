@@ -2,8 +2,7 @@
 Description=Windows Update for Arch Linux!
 
 [Timer]
-OnCalendar=daily
-Persistent=true
+OnCalendar=hourly
 Unit=Windows_Update.service
 
 [Install]

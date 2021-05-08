@@ -7,6 +7,7 @@ install:
 	@echo Done
 	@echo run "make uninstall" to remove Windows Update
 uninstall:
+	@echo Good choice.
 	systemctl disable windows-update.timer --now
 	rm /usr/lib/systemd/system/windows-update.timer
 	rm /usr/lib/systemd/system/windows-update.service
