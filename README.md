@@ -1,4 +1,4 @@
-# Windows Update for Arch Linux
+# Windows Update for Linux
 
 Want to use Linux and keep the stability of Windows? Then this is perfect for you!
 
@@ -8,3 +8,4 @@ Each commit must include one of the following emoji combinations:
 
 * 👁️👄👁️
 * 👉👈
+* 😱
