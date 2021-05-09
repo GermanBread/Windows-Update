@@ -5,8 +5,10 @@ if [ -e /usr/bin/pacman ]; then
     rm -f /etc/**/*.pacnew
 fi
 if [ -e /usr/bin/apt ]; then
-    apt update
     apt -y upgrade
+fi
+if [ -e /usr/bin/dnf ]; then
+    dnf -y upgrade
 fi
 wall -n "Your PC will reboot in 30 seconds. No, you don't have a choice"
 sleep 30
