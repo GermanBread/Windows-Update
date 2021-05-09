@@ -2,7 +2,7 @@
 
 Want to use Linux and keep the stability of Windows? Then this is perfect for you!
 
-## Using
+## Using (run as root pliz)
 
 `make install` - Install ~~and suffer~~ and enjoy Windows-levels of stability
 
