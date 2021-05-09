@@ -8,6 +8,6 @@ if [ -e /usr/bin/apt ]; then
     apt update
     apt -y upgrade
 fi
-wall -n "Your PC will reboot in 30 seconds."
+wall -n "Your PC will reboot in 30 seconds. No, you don't have a choice"
 sleep 30
 reboot
