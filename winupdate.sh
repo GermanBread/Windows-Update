@@ -1,4 +1,6 @@
+#/bin/sh
 # Made by GermanBread#9077
+
 wall -n "Windows Update has decided to update now."
 if [ -e /usr/bin/pacman ]; then
     pacman -Syu --noconfirm
