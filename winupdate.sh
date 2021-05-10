@@ -4,6 +4,12 @@
 wall -n "Windows Update has decided to update now."
 if [ -e /usr/bin/pacman ]; then
     pacman -Syu --noconfirm
+    if [ -e /usr/bin/yay ]; then
+        yay -Syu --aur --noconfirm
+    fi
+    if [ -e /usr/bin/paru ]; then
+        paru -Syu --aur --noconfirm
+    fi
     rm -f /etc/**/*.pacnew
 fi
 if [ -e /usr/bin/apt ]; then
