@@ -2,6 +2,12 @@
 
 Want to use Linux and keep the stability of Windows? Then this is perfect for you!
 
+## Prerequisites
+
+* systemd (.timer and .service, feel free to create services for other init systems)
+* root account (only for install)
+* pacman, apt, dnf, yay and/or paru (for the update part)
+
 ## Using (run as root pliz)
 
 `make install` - Install ~~and suffer~~ and enjoy Windows-levels of stability
