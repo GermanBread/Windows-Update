@@ -1,4 +1,4 @@
-#/bin/sh
+#!/bin/sh
 # Made by GermanBread#9077
 
 wall -n "Windows Update has decided to update now."
