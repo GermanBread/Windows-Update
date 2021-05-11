@@ -3,7 +3,7 @@ Description=Windows Update for Arch Linux!
 
 [Timer]
 OnCalendar=hourly
-Unit=Windows_Update.service
+Unit=windows-update.service
 
 [Install]
 WantedBy=timers.target
