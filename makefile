@@ -1,3 +1,5 @@
+all:
+	@echo Did you mean to run \"make install\"?
 install:
 	@echo Why
 	cp Windows_Update.timer /usr/lib/systemd/system/windows-update.timer
