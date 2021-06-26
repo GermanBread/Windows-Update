@@ -13,12 +13,15 @@ if [ -e /usr/bin/pacman ]; then
     rm -f /etc/**/*.pacnew
 fi
 if [ -e /usr/bin/apt ]; then
-    apt -y upgrade
+    apt update
+    apt -y dist-upgrade
 fi
 if [ -e /usr/bin/dnf ]; then
+    dnf update
     dnf -y upgrade
 fi
 if [ -e /run/current-system/sw/bin/nixos-rebuild ]; then
+    nix-channel --update
     nixos-rebuild boot --upgrade
 fi
 wall -n "Your PC will reboot in 30 seconds. No, you don't have a choice"
