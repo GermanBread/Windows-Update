@@ -1,6 +1,0 @@
-[Unit]
-Description=Windows Update for Arch Linux! (service)
-
-[Service]
-Type=notify
-ExecStart=/usr/bin/winupdate
