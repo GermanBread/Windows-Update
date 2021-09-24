@@ -1,5 +1,5 @@
 [Unit]
-Description=Windows Update for Arch Linux! (service)
+Description=Windows Update for Linux! (service)
 
 [Service]
 Type=notify

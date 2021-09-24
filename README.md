@@ -6,7 +6,7 @@ Want to use Linux and keep the stability of Windows? Then this is perfect for yo
 
 * systemd (.timer and .service, feel free to create services for other init systems)
 * root account (only for install)
-* pacman, apt, dnf, yay and/or paru (for the update part)
+* pacman, apt, dnf, zypper, yay and/or paru (for the update part)
 
 ## Using (run as root pliz)
 

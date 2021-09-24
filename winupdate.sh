@@ -1,28 +1,30 @@
 #!/bin/sh
 # Made by GermanBread#9077
+hascommand() {
+    command -v $1 &>/dev/null
+}
 
-wall -n "Windows Update has decided to update now."
-if [ -e /usr/bin/pacman ]; then
-    pacman -Syu --noconfirm
-    if [ -e /usr/bin/yay ]; then
-        yay -Syu --aur --noconfirm
+wall -n "Windows has decided to update now."
+if hascommand pacman; then
+    pacman -Syu --noconfirm;
+    if hascommand yay; then
+        yay -Syu --aur --noconfirm;
     fi
-    if [ -e /usr/bin/paru ]; then
-        paru -Syu --aur --noconfirm
+    if hascommand paru; then
+        paru -Syu --aur --noconfirm;
     fi
-    rm -f /etc/**/*.pacnew
+    rm -f /etc/**/*.pacnew;
 fi
-if [ -e /usr/bin/apt ]; then
-    apt update
-    apt -y dist-upgrade
+if hascommand apt; then
+    apt update;
+    apt -y dist-upgrade;
 fi
-if [ -e /usr/bin/dnf ]; then
-    dnf update
-    dnf -y upgrade
+if hascommand dnf; then
+    dnf update;
+    dnf -y upgrade;
 fi
-if [ -e /run/current-system/sw/bin/nixos-rebuild ]; then
-    nix-channel --update
-    nixos-rebuild boot --upgrade
+if hascommand zypper; then
+    zypper dup --no-confirm --skip-interactive --auto-agree-with-licenses;
 fi
 wall -n "Your PC will reboot in 30 seconds. No, you don't have a choice"
 sleep 30

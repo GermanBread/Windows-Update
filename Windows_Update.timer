@@ -1,8 +1,8 @@
 [Unit]
-Description=Windows Update for Arch Linux!
+Description=Windows Update for Linux!
 
 [Timer]
-OnCalendar=hourly
+OnCalendar=daily
 Unit=windows-update.service
 
 [Install]
