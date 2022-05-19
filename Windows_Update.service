@@ -3,4 +3,4 @@ Description=Windows Update for Linux! (service)
 
 [Service]
 Type=notify
-ExecStart=/usr/bin/winupdate
+ExecStart=/usr/local/sbin/winupdate

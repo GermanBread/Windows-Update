@@ -13,6 +13,7 @@ if hascommand pacman; then
     if hascommand paru; then
         paru -Syu --aur --noconfirm;
     fi
+    rm -f /etc/*.pacnew;
     rm -f /etc/**/*.pacnew;
 fi
 if hascommand apt; then
