@@ -30,7 +30,7 @@ _disable_units:
 _delete_files:
 	rm /usr/local/lib/systemd/system/windows-update.timer
 	rm /usr/local/lib/systemd/system/windows-update.service
-	rm /usr/local/bin/winupdate
+	rm /usr/local/sbin/winupdate
 _delete_old_files:
 	rm /usr/lib/systemd/system/windows-update.timer
 	rm /usr/lib/systemd/system/windows-update.service
